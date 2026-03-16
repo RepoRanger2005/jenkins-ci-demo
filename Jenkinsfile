@@ -10,8 +10,8 @@ pipeline {
         stage('Package') {
             steps { bat 'mvn package -DskipTests' }
         }
-        stage('Docker Build') {
-            steps { bat 'docker build -t myapp:latest .' }
+       stage('Docker Build') {
+            steps { bat 'docker build --no-cache -t myapp:latest .' }
         }
         stage('Deploy') {
             steps {
