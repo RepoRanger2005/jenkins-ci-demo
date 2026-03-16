@@ -3,9 +3,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication(exclude = { 
-    org.springframework.boot.autoconfigure.r2dbc.R2dbcAutoConfiguration.class 
-})
+@SpringBootApplication
 @RestController
 public class DemoApplication {
 
