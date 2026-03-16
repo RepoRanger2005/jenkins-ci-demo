@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM bellsoft/liberica-openjdk-alpine:17
 WORKDIR /app
 COPY target/myapp.jar app.jar
 EXPOSE 8080
